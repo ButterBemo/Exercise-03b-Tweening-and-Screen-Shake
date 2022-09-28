@@ -14,6 +14,12 @@ anchor_bottom = 1.0
 theme = ExtResource( 2 )
 script = ExtResource( 1 )
 
+[node name="Boundary" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Boundary"]
+position = Vector2( -648, 680 )
+polygon = PoolVector2Array( 648, -688, 648, -936, 1864, -936, 1864, 280, 456, 280, 456, -936, 648, -936 )
+
 [node name="Background" type="ColorRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
